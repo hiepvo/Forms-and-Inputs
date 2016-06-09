@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #05d4f0;
+  font-family: "Roboto Slab", sans-serif;
+  padding-top: 20px;
+}
+
+.wrapper {
+  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#question-form {
+  padding: 0px 25px 25px;
+  background: #EF81C0;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+  -moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: table;
+  position: static;
+}
+
+#question-form .header {
+  margin-bottom: 15px;
+}
+
+#question-form .header h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+#question-form .header .slogan {
+  color: #057996;
+  font-size: 1.6rem;
+  font-style: italic;
+  text-align: center;
+}
+#question-form .sep {
+  height: 1px;
+  background: #e8e8e8;
+  width: 400px;
+  margin: 0px -25px;
+}
+
+#question-form .inputs {
+  margin-top: 20px;
+}
+
+input::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+
+input:-moz-placeholder {
+  color: #b5b5b5;
+}
+
+#question-form .inputs input[type=email], input[type=text], textarea {
+  background: #f5f5f5;
+  font-size: 1.1rem;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  padding: 13px 10px;
+  width: 330px;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+  -moz-box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+  -webkit-box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+}
+
+#question-form .inputs input[type=email]:focus, input[type=text]:focus, input[type=datetime]:focus, textarea:focus {
+  background: #fff;
+  box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+  -moz-box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+  -webkit-box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+  outline: none;
+}
+
+#question-form .inputs #submit {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  background: #EC53AB;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  display: table;
+  clear: both;
+}
+
+#question-form .inputs #submit:hover {
+  background: #EF81C0;
+}
+
+.fieldset > legend {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.fieldset .radio label {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: #057996;
+}
+
+.group-other {
+  padding: 16px 0;
+}
+
+.group-other label {
+  color: #057996;
+  font-size: 1.6rem;
+}
+
+
+
