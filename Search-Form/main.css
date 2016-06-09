@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #05d4f0;
+  font-family: "Roboto Slab", sans-serif;
+  padding-top: 20px;
+}
+
+.wrapper {
+  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#search {
+  padding: 0px 25px 25px;
+  background: #EF81C0;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+  -moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: table;
+  position: static;
+}
+
+#search .inputs {
+  margin-top: 20px;
+}
+
+input::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+
+input:-moz-placeholder {
+  color: #b5b5b5;
+}
+
+#search .inputs input[type=text] {
+  background: #f5f5f5;
+  font-size: 1.1rem;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 10px;
+  width: 330px;
+  margin: 20px 0px;
+  box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+  -moz-box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+  -webkit-box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+  clear: both;
+}
+
+#search .inputs input[type=text]:focus {
+  background: #fff;
+  box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+  -moz-box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+  -webkit-box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+  outline: none;
+}
+
+#search .inputs #submit {
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  background: #EC53AB;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.7);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  display: table;
+  clear: both;
+}
+
+#search .inputs #submit:hover {
+  background: #EF81C0;
+}
+
+/*-------------------*/
+
+.dropdown {
+  position: relative;
+  width: 150px;
+  background: #f2f2f2;
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-color: #888888 transparent;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  width: 100%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 16px;
+  font-size: 1.2rem;
+  color: #747474;
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
