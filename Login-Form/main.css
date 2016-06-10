@@ -94,7 +94,7 @@ input:-moz-placeholder {
   width: 100%;
   margin-top: 2rem;
   padding: 1.5rem 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.1rem;
@@ -117,16 +117,10 @@ input:-moz-placeholder {
 
 .remember-me {
   font-size: 1.4rem;
-  color: whitesmoke;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  transform: scale(1.5); /* IE */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
-  margin-right: 1rem;
-}
 
 #forgot-pass {
   padding-left: 8rem;
