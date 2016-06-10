@@ -115,3 +115,25 @@ input:-moz-placeholder {
   background: #EF81C0;
 }
 
+.remember-me {
+  font-size: 1.4rem;
+  color: whitesmoke;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  transform: scale(1.5); /* IE */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  margin-right: 1rem;
+}
+
+#forgot-pass {
+  padding-left: 8rem;
+}
+
+#forgot-pass > a {
+  color: #057996;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
