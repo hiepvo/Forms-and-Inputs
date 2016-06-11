@@ -1,17 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 
-:root {
-  --body-color: #05D4F0;
-  --form-color: #EF81C0;
-  --white: #FFFFFF;
-  --placeholder-text-color: #B5B5B5;
-}
 
 html {
   font-size: 62.5%;
 }
 body {
-  background: var(--body-color);
+  background: #05D4F0;
   font-family: "Roboto Slab", sans-serif;
   padding-top: 2rem;
 }
@@ -24,7 +18,7 @@ body {
 
 #credit-form {
   padding: 0 2.5rem 2.5rem;
-  background: var(--form-color);
+  background: #EF81C0;
   box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
   -moz-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
   -webkit-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
@@ -41,7 +35,7 @@ body {
 
 #credit-form .header h3 {
   text-align: center;
-  color: var(--white);
+  color: #FFFFFF;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -50,7 +44,7 @@ body {
 
 #credit-form .sep {
   height: 0.1rem;
-  background: var(--white);
+  background: #FFFFFF;
   width: 44rem;
   margin: 0 -2.5rem;
 }
@@ -84,30 +78,30 @@ input:-moz-placeholder {
 }
 
 fieldset  legend {
-  color: var(--white);
-  font-size: 1.6rem;
+  color: #FFFFFF;
+  font-size: 2.6rem;
   padding-bottom: 1rem;
 }
 
 .inputs #red {
   color: red;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .inputs #blue {
   color: blue;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .inputs #green {
   color: green;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 #outColor {
-  background: var(--body-color);
+  background: #05D4F0;
   margin-left: 1rem;
 }
