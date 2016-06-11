@@ -76,7 +76,7 @@ input:-moz-placeholder {
   clear: both;
 }
 
-#schedule .inputs input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=datetime]:focus {
+#schedule .inputs input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=datetime]:focus, textarea:focus {
   background: #fff;
   box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
   -moz-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
