@@ -7,19 +7,22 @@
 </head>
 <body>
 <div class = "wrapper">
-  <form id = "credit-form">
+  <form id = "credit-form" novalidate>
     <div class = "header">
       <h3>Credit/Debit Card Information</h3>
     </div>
+    <ul class = "errorMessages" id="errorMessage" aria-live="polite"></ul>
     <div class = "sep"></div>
     <div class = "inputs">
       <fieldset>
         <legend>Card Information</legend>
-        <input type = "text" placeholder = "Name On Card" autofocus/>
-        <div><input id = "card-number" type = "text" placeholder = "Card Number(xxxx-xxxx-xxxx-xxxx)"/><input id = "cvs"
-                                                                                                              type = "text"
-                                                                                                              placeholder = "CVS"
-                                                                                                              maxlength = "3"/>
+        <input id = "name" type = "text" onchange=""  placeholder = "Name On Card" autofocus required/>
+        <div><input id = "card-number" required type = "text" placeholder = "Card Number(xxxx-xxxx-xxxx-xxxx)"/><input
+            id = "cvs"
+            type = "text"
+            placeholder = "CVS"
+            required
+            maxlength = "3"/>
         </div>
         <div class = "dropdown">
           <select title = "month" name = "month" class = "dropdown-select">
@@ -41,30 +44,26 @@
         <div class = "dropdown">
           <select title = "year" name = "year" class = "dropdown-select">
             <option value = "">Years</option>
-            <option value = "1">01</option>
-            <option value = "2">02</option>
-            <option value = "3">03</option>
-            <option value = "4">04</option>
-            <option value = "5">05</option>
-            <option value = "6">06</option>
-            <option value = "1">07</option>
-            <option value = "2">08</option>
-            <option value = "3">09</option>
-            <option value = "4">10</option>
-            <option value = "5">11</option>
-            <option value = "6">12</option>
+            <option value = "1">2016</option>
+            <option value = "2">2017</option>
+            <option value = "3">2018</option>
+            <option value = "4">2019</option>
+            <option value = "5">2020</option>
+            <option value = "6">2021</option>
+            <option value = "7">2022</option>
+
+
           </select>
         </div>
         <div class = "image-credit">
           <img src = "credit-cards-logos.png" alt = "">
         </div>
       </fieldset>
-
-      <a id = "submit" href = "#" onclick="submit()">Submit</a>
+      <input id = "submit" type = "submit" value = "Submit">
     </div>
   </form>
 </div>
-<script src="validator.js"></script>
+<script src = "validator.js"></script>
 <script src = "main.js"></script>
 </body>
 </html>
