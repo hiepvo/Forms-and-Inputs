@@ -11,30 +11,31 @@
     <div class="header">
       <h3>Questionaire</h3>
     </div>
+    <ul class = "errorMessages" id="errorMessage" aria-live="polite"></ul>
     <div class="sep"></div>
     <div class="inputs">
-      <input type="text" placeholder="First Name" autofocus />
-      <input type="text" placeholder="Last Name" />
-      <input type="email" placeholder="E-mail" />
+      <input id="fName" type="text" placeholder="First Name" autofocus />
+      <input id="lName" type="text" placeholder="Last Name" />
+      <input id="email" type="text" placeholder="E-mail" />
       <fieldset class="fieldset">
         <legend>Favorite Colors</legend>
         <div class="radio">
           <label>
-            <input type="radio" id="rd1" value="one"/>
+            <input type="radio" id="rd1" value="one" name="fav-colors"/>
             White</label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" id="rd2" value="two"/> Black</label>
+            <input type="radio" id="rd2" value="two" name="fav-colors"/> Black</label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" id="rd3" value="three"/>
+            <input type="radio" id="rd3" value="three" name="fav-colors"/>
             Red</label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" id="rd4" value="three"/>
+            <input type="radio" id="rd4" value="three" name="fav-colors"/>
             Orange</label>
         </div>
       </fieldset>
@@ -42,9 +43,11 @@
         <label>Other</label>
         <textarea title="Other" rows="10"></textarea>
       </div>
-      <a id="submit" href="#">Submit</a>
+      <input id = "submit" type = "submit" value = "Submit">
     </div>
   </form>
 </div>
+<script src = "validator.js"></script>
+<script src = "main.js"></script>
 </body>
 </html>
