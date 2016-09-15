@@ -11,28 +11,30 @@
     <div class="header">
       <h3>Scheduling Form</h3>
     </div>
+    <ul class = "errorMessages" id="errorMessage" aria-live="polite"></ul>
     <div class="sep"></div>
     <div class="inputs">
       <fieldset>
         <legend>Contact Information</legend>
-        <input type="text" placeholder="First Name" autofocus />
-        <input type="text" placeholder="Last Name" />
-        <input type="email" placeholder="E-mail" />
-        <input type="text" placeholder="Phone" />
+        <input id="fName" type="text" placeholder="First Name" autofocus />
+        <input id="lName" type="text" placeholder="Last Name" />
+        <input id="email" type="text" placeholder="E-mail" />
+        <input id="phone" type="text" placeholder="Phone" />
       </fieldset>
       <fieldset>
         <legend>Appointment Time</legend>
-        <input type="datetime" placeholder="Date(mm/dd/yyyy)" />
-        <input type="datetime" placeholder="Time(hh:mm:ss)" />
+        <input id="apptDate" type="datetime" placeholder="Date(mm/dd/yyyy)" />
+        <input id="apptTime" type="datetime" placeholder="Time(hh:mm:ss)" />
         <input type="datetime" placeholder="Time Zone" />
         <div class="message">
           <textarea title="Other" rows="10" placeholder="Message"></textarea>
         </div>
       </fieldset>
-
-      <a id="submit" href="#">Submit</a>
+      <input id = "submit" type = "submit" value = "Submit">
     </div>
   </form>
 </div>
+<script src = "validator.js"></script>
+<script src = "main.js"></script>
 </body>
 </html>
