@@ -7,24 +7,27 @@
 </head>
 <body>
 <div class="wrapper">
-  <form id="signup">
+  <form id="signup" novalidate>
     <div class="header">
       <h3>Sign Up @ L.MD</h3>
       <p class="slogan">
         Get the most comprehensive and most rewarding web-programming education
       </p>
     </div>
+    <ul class = "errorMessages" id="errorMessage" aria-live="polite"></ul>
     <div class="sep"></div>
     <div class="inputs">
-      <input type="text" placeholder="First Name" autofocus />
-      <input type="text" placeholder="Last Name" />
-      <input type="email" placeholder="E-mail" />
-      <input type="password" placeholder="Password" />
-      <input type="password" placeholder="Retype Password" />
-      <input type="datetime" placeholder="Birthday(mm/dd/yyyy)" />
-      <a id="submit" href="#">Submit</a>
+      <input id="fName" type="text" placeholder="First Name" autofocus />
+      <input id="lName" type="text" placeholder="Last Name" />
+      <input id="email" type="text" placeholder="E-mail" />
+      <input id="password" type="password" placeholder="Password" />
+      <input id="password1" type="password" placeholder="Confirm Password" />
+      <input id="bDay" type="datetime" placeholder="Birthday(mm/dd/yyyy)" />
+      <input id = "submit" type = "submit" value = "Submit">
     </div>
   </form>
 </div>
+<script src = "validator.js"></script>
+<script src = "main.js"></script>
 </body>
 </html>
