@@ -96,6 +96,7 @@ input:-moz-placeholder {
   box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
   -moz-box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
   -webkit-box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
+  border: none;
   border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
@@ -129,3 +130,14 @@ fieldset > legend {
   color: #ffffff;
 }
 span.clear { clear: both; display: block; }
+
+.errorMessages{
+  width  : 100%;
+  padding: 0;
+  font-size: 1rem;
+  color: #900;
+  border-radius: 0 0 5px 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
