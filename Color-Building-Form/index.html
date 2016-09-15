@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+  <meta charset = "UTF-8">
+  <title>Color Builder</title>
+</head>
+<body>
+<div class = "wrapper">
+  <form id = "credit-form">
+    <div class = "header">
+      <h3>Color Builder</h3>
+    </div>
+o    <div class="inputs">
+      <fieldset>
+        <legend>RGB</legend>
+        <div>
+          <label id="red"> RED</label>
+          <input type="range" value="20"/>
+        </div>
+        <div>
+          <label id="blue">BLUE</label>
+          <input type="range" value="20"/>
+        </div>
+        <div>
+          <label id="green">GREEN</label>
+          <input type="range" value="20"/>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend> Alpha</legend>
+        <input type = "range" id = "alphaInput" min = "0" max = "1" value = "0" step = "0.01"/>
+      </fieldset>
+      <fieldset>
+        <legend> Output Color</legend>
+        <input id="outColor" type = "text" name = "outColor"/>
+      </fieldset>
+    </div>
+  </form>
+</div>
+</body>
+</html>

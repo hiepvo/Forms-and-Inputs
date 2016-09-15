@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+  <meta charset = "UTF-8">
+  <title>Shipping Form</title>
+</head>
+<body>
+<div class="wrapper">
+  <form id="order" novalidate>
+    <div class="header">
+      <h3>Shipping Form</h3>
+    </div>
+    <ul class = "errorMessages" id="errorMessage" aria-live="polite"></ul>
+    <div class="sep"></div>
+    <div class="inputs">
+      <div class="billing-addr"><input type="checkbox" id="billing-addr" />Same as Shipping Address</div>
+      <div class="column1">
+      <fieldset>
+        <legend>Shipping Information</legend>
+        <input id="fName" type="text" placeholder="First Name" autofocus />
+        <input id="lName" type="text" placeholder="Last Name" />
+        <input id="address" type="text" placeholder="Address Line 1" />
+        <input type="text" placeholder="Address Line 2" />
+        <input type="text" placeholder="City" />
+        <input type="text" placeholder="State/Province/Region" />
+        <input type="text" placeholder="Zip" />
+        <input type="text" placeholder="Country" />
+        <input id="phone" type="text" placeholder="Phone" />
+      </fieldset>
+      </div>
+      <div class="column2">
+        <fieldset>
+          <legend>Billing Information</legend>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="text" placeholder="Address Line 1" />
+          <input type="text" placeholder="Address Line 2" />
+          <input type="text" placeholder="City" />
+          <input type="text" placeholder="State/Province/Region" />
+          <input type="text" placeholder="Zip" />
+          <input type="text" placeholder="Country" />
+          <input type="text" placeholder="Phone" />
+        </fieldset>
+      </div>
+      <span class="clear"></span>
+      <input id = "submit" type = "submit" value = "Place Order">
+    </div>
+  </form>
+</div>
+<script src = "validator.js"></script>
+<script src = "main.js"></script>
+</body>
+</html>

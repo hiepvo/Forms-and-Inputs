@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+  <meta charset = "UTF-8">
+  <title>Login</title>
+</head>
+<body>
+<div class="wrapper">
+  <form id="login" novalidate>
+    <div class="header">
+      <h3>Account Login</h3>
+    </div>
+    <ul class = "errorMessages" id="errorMessage" aria-live="polite"></ul>
+    <div class="sep"></div>
+    <div class="inputs">
+      <input id="email" type="text" placeholder="Email Address" autofocus  />
+      <input id="password" type="password" placeholder="Password" />
+      <label for="remember-me" class="remember-me"><input type="checkbox" id="remember-me" />Keep Me Sign In</label>
+      <span id="forgot-pass">
+        <a href="#">Forgot Password?</a>
+      </span>
+      <input id = "submit" type = "submit" value = "Submit">
+    </div>
+  </form>
+</div>
+<script src = "validator.js"></script>
+<script src = "main.js"></script>
+</body>
+</html>
