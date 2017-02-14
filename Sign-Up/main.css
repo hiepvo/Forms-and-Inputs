@@ -3,6 +3,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   background: #05d4f0;
   font-family: "Roboto Slab", sans-serif;
@@ -10,17 +11,16 @@ body {
 }
 
 .wrapper {
-  width: 40rem;
-  max-width: 40rem;
+  width: 30%;
   margin: 0 auto;
 }
 
 #signup {
   padding: 0 2.5rem 2.5rem;
   background: #EF81C0;
-  box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
-  -moz-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.7);
   -moz-border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   border-radius: 0.5rem;
@@ -38,8 +38,8 @@ body {
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  margin-top: 2rem;
 }
-
 
 #signup .header .slogan {
   color: #057996;
@@ -47,11 +47,11 @@ body {
   font-style: italic;
   text-align: center;
 }
+
 #signup .sep {
   height: 0.1rem;
   background: #e8e8e8;
-  width: 40rem;
-  margin: 0 -2.5rem;
+  width: 100%;
 }
 
 #signup .inputs {
@@ -74,19 +74,19 @@ input:-moz-placeholder {
   border-radius: 0.3rem;
   border: none;
   padding: 1.3rem 1rem;
-  width: 33rem;
+  width: 95%;
   margin-bottom: 2rem;
-  box-shadow: inset 0 0.2rem 0.3rem rgba( 0,0,0,0.1 );
-  -moz-box-shadow: inset 0 0.2rem 0.3rem rgba( 0,0,0,0.1 );
-  -webkit-box-shadow: inset 0 0.2rem 0.3rem rgba( 0,0,0,0.1 );
+  box-shadow: inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
   clear: both;
 }
 
 #signup .inputs input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=datetime]:focus {
   background: #fff;
-  box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
-  -moz-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
-  -webkit-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
+  box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
   outline: none;
 }
 
@@ -101,9 +101,9 @@ input:-moz-placeholder {
   text-align: center;
   text-decoration: none;
   background: #EC53AB;
-  box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
-  -moz-box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
+  box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.7);
   border: none;
   border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -116,8 +116,8 @@ input:-moz-placeholder {
   background: #EF81C0;
 }
 
-.errorMessages{
-  width  : 100%;
+.errorMessages {
+  width: 100%;
   padding: 0;
   font-size: 1rem;
   color: #900;
@@ -125,4 +125,10 @@ input:-moz-placeholder {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper {
+    width: 100%;
+  }
 }
