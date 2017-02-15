@@ -144,3 +144,19 @@ input:-moz-placeholder {
   box-sizing: border-box;
 
 }
+
+@media screen and (max-width: 980px) {
+  .wrapper {
+    width: 100%;
+  }
+  #forgot-pass {
+    padding-left: 2rem;
+  }
+  #login .sep {
+    width: 100%;
+    margin: 0;
+  }
+  #login .inputs input[type="email"], input[type="password"], input[type="text"] {
+    width: 92%;
+  }
+}
