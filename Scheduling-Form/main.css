@@ -3,6 +3,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   background: #05d4f0;
   font-family: "Roboto Slab", sans-serif;
@@ -18,9 +19,9 @@ body {
 #schedule {
   padding: 0 2.5rem 2.5rem;
   background: #EF81C0;
-  box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
-  -moz-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.7);
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.7);
   -moz-border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   border-radius: 0.5rem;
@@ -39,7 +40,6 @@ body {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
 
 #schedule .sep {
   height: 0.1rem;
@@ -70,17 +70,17 @@ input:-moz-placeholder {
   padding: 0.8rem 1rem;
   width: 33rem;
   margin-bottom: 2rem;
-  box-shadow: inset 0 0.2rem 0.3rem rgba( 0,0,0,0.1 );
-  -moz-box-shadow: inset 0 0.2rem 0.3rem rgba( 0,0,0,0.1 );
-  -webkit-box-shadow: inset 0 0.2rem 0.3rem rgba( 0,0,0,0.1 );
+  box-shadow: inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
   clear: both;
 }
 
 #schedule .inputs input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=datetime]:focus, textarea:focus {
   background: #fff;
-  box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
-  -moz-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
-  -webkit-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba( 0,0,0,0.2 ), 0 0.5rem 0.5rem rgba( 0,0,0,0.15 );
+  box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 0 0.3rem #fff38e, inset 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
   outline: none;
 }
 
@@ -95,9 +95,9 @@ input:-moz-placeholder {
   text-align: center;
   text-decoration: none;
   background: #EC53AB;
-  box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
-  -moz-box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0 0 0.3rem 0.1rem rgba(0,0,0,0.7);
+  box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.7);
   border: none;
   border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -110,18 +110,18 @@ input:-moz-placeholder {
   background: #EF81C0;
 }
 
-fieldset  legend {
+fieldset legend {
   color: #ffffff;
   font-size: 1.6rem;
   padding-bottom: 1rem;
 }
 
- .message {
+.message {
   padding: 0.6rem 0;
 }
 
-.errorMessages{
-  width  : 100%;
+.errorMessages {
+  width: 100%;
   padding: 0;
   font-size: 1rem;
   color: #900;
@@ -130,3 +130,23 @@ fieldset  legend {
   box-sizing: border-box;
 
 }
+
+@media screen and (max-width: 980px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  #schedule .inputs input[type="email"], input[type="password"], input[type="text"], input[type="datetime"], textarea {
+    width: 90%;
+  }
+
+  #schedule .sep {
+    width: 100%;
+    margin: 0;
+  }
+
+  #schedule .header h3 {
+    font-size: 3rem;
+  }
+}
+
