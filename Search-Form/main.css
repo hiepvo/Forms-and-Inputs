@@ -136,3 +136,35 @@ input:-moz-placeholder {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
+@media screen and (max-width: 980px) {
+  #search .inputs #submit {
+    width: 90%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  #search {
+    width: 95%;
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
+
+  #search .inputs {
+    width: 95%;
+  }
+
+  .dropdown {
+    width: 90%;
+  }
+
+  #search .inputs input[type="text"] {
+    width: 83%;
+  }
+
+  #search .inputs #submit {
+    width: 90%;
+  }
+}
